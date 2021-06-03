@@ -7,21 +7,22 @@
 <body>
     <div id="root">
         <input type="text" id="input" v-model="message">
+        <p>The value for the input is:{{ message }}.</p>
     </div>
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+
+
+<script src="https://unpkg.com/vue@2.1.3/dist/vue.js"></script>
 
 <script>
-    let data = {
-        message: 'Hello Word'
-    };
-
-    new Vue({
+     new Vue({
         el: '#root',
-        data: data
-    })
+        data: {
+            message: 'Hello Word'
+        }
+    });
 </script>
 
 </body>
