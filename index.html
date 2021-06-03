@@ -25,7 +25,11 @@
         el: '#root',
         data: {
             names: ['Manu','Luz','Alex','Alina']
-        }
+        },
+
+         mounted(){
+            alert('ready?');
+         }
     });
 
      document.querySelector('#button').addEventListener('click', () =>{
