@@ -29,9 +29,10 @@
     });
 
      document.querySelector('#button').addEventListener('click', () =>{
-         let name = document.querySelector('#input').value;
+         let name = document.querySelector('#input');
 
-         app.names.push(name);
+         app.names.push(name.value);
+         name.value = '';
 
      })
 </script>
