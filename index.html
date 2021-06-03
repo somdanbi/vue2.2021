@@ -5,7 +5,10 @@
     <title>Title</title>
 </head>
 <body>
-    <input type="text" id="input">
+    <div id="root">
+        <input type="text" id="input" v-model="message">
+    </div>
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
@@ -15,7 +18,11 @@
         message: 'Hello Word'
     };
 
-    document.querySelector('#input').value = data.message;
+    new Vue({
+        el: '#root',
+        data: data
+    })
 </script>
+
 </body>
 </html>
