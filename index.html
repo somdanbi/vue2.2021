@@ -6,7 +6,7 @@
 </head>
 <body>
     <div id="root">
-        <button title="I am the title of the button">Hover over Me</button>
+        <button v-bind:title="title">Hover over Me</button>
     </div>
 
 
@@ -14,9 +14,9 @@
 
 <script>
      var app = new Vue({
-
+         el:'#root',
         data: {
-
+            title: 'Now the title is being set through JS',
         },
 
 
