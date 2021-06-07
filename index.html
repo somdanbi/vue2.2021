@@ -9,7 +9,7 @@
 <body>
     <div id="root">
         <h1>
-            {{ message.split('').reverse().join('') }}
+            {{ reversedMessage }}
         </h1>
     </div>
 
@@ -21,8 +21,14 @@
          el:'#root',
 
         data: {
-            message: 'Guadalupe',
+            message: 'GuadalupE',
         },
+
+         computed:{
+             reversedMessage() {
+                 return this.message.split('').reverse().join('');
+             }
+         }
 
 
     });
