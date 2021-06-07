@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
-    <style>
 
-        .is-loading { background: red;}
-    </style>
 </head>
 <body>
     <div id="root">
-        <button :class="{ 'is-loading': isLoading }" @click="toggleClass">Toggle Me</button>
+
     </div>
 
 
@@ -22,14 +19,8 @@
          el:'#root',
 
         data: {
-            isLoading: false,
+          
         },
-
-         methods: {
-             toggleClass() {
-                 this.isLoading = true;
-             }
-         }
 
 
     });
