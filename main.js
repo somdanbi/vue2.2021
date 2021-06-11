@@ -3,7 +3,7 @@ Vue.component('tabs',{
     <div>
     <div class="tabs">
         <ul>            
-            <li v-for="tab in tabs">
+            <li v-for="tab in tabs" :class="{ 'is-active': tab.selected }">
                 <a href="#">{{ tab.name }}</a>
             </li>
         </ul>
@@ -31,7 +31,8 @@ Vue.component('tab',{
     `,
 
     props: {
-        name: {required:true}
+        name: {required:true},
+        selected:{default:false}
     }
 });
 
